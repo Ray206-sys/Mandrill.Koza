@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+            <title>猿レベル診断</title>
+        
+            <link rel="stylesheet" href="style.css">
+
+
+        </head>
+
+        <header>
+
+            <input type="checkbox" name="" id="toggler">
+            <label for ="toggler" class="fas fa-bars"></label>
+            <a href="index.html" class="logo">
+                マンドリル講座<span>.</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="#猿レベル診断">猿レベル診断</a>
+                <a href="#結果">結果</a>
+            </nav>
+        
+        </header>
+
+            <body>
+
+                <section class="猿レベル診断" id="猿レベル診断">
+
+                    <h1 class="heading"> <span> 猿レベル </span> 診断 </h1>
+                </section>
+
+                <section class="質問">
+                    <h3>Q1 HTMLの指定を最初にするコードは？</h3>
+
+                        <div class="choices">
+                            <label><input type="radio" name="Q1" value="1"> &lt;html&gt;</label>
+                            <label><input type="radio" name="Q1" value="2"> &lt;!DOCTYPE html&gt;</label>
+                            <label><input type="radio" name="Q1" value="0"> &lt;head&gt;</label>
+                        </div>
+                </section>
+
+                <section class="質問">
+                    <h3>Q2 CSSのパディングプロパティで、左右に20px余白を設ける記述は？</h3>
+
+
+                        <div class="choices">
+                            <label><input type="radio" name="Q2" value="1"> &lt;20px 0px 20px&gt;</label>
+                            <label><input type="radio" name="Q2" value="2"> &lt;0px 20px 0px&gt;</label>
+                            <label><input type="radio" name="Q2" value="0"> &lt;0px 20px 20px&gt;</label>
+                        </div>
+                </section>
+
+                <section class="質問">
+                    <h3>Q3 あなたが目指すべき姿は？</h3>
+
+                        <div class="choices">
+                            <label><input type="radio" name="Q3" value="1"> &lt;マンドリラー&gt;</label>
+                            <label><input type="radio" name="Q3" value="2"> &lt;マンドリスト&gt;</label>
+                            <label><input type="radio" name="Q3" value="0"> &lt;マントヒヒ&gt;</label>
+                        </div>
+
+                </section>
+
+                <section class="質問">
+                    <h3>Q4 真の猿は？</h3>
+
+                        <div class="choices">
+                            <label><input type="radio" name="Q4" value="1"> &lt;マルチーズ&gt;</label>
+                            <label><input type="radio" name="Q4" value="2"> &lt;マンドリル&gt;</label>
+                            <label><input type="radio" name="Q4" value="0"> &lt;日本猿&gt;</label>
+                        </div>
+                </section>
+
+                <section class="質問">
+                    <h3>Q5 マンドれなとは？</h3>
+
+                        <div class="choices">
+                        <label><input type="radio" name="Q5" value="1"> &lt;神&gt;</label>
+                        <label><input type="radio" name="Q5" value="2"> &lt;マンドリル&gt;</label>
+                        <label><input type="radio" name="Q5" value="0"> &lt;奇人&gt;</label>
+                        </div>
+                </section>
+    
+                <section class="診断結果" id="結果">
+                <button id="check">診断する</button>
+                    <p id="result"></p>
+                </section>
+
+                    <script src="script.js"></script>
+            </body>

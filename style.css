@@ -1,0 +1,776 @@
+:root{
+    --blue: #1c55f0;
+}
+
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin:2rem 0;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.heading span{
+    color: var(--blue);
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--blue);
+}
+
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--blue);
+
+}
+
+header .navbar a{
+    font-size: 2.5rem;
+    padding: 0 1.5rem;
+    color: #666;
+    justify-content: space-between;
+}
+
+header .navbar a:hover{
+    color: var(--blue);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: var(--blue);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.ホーム{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url("https://t3.ftcdn.net/jpg/17/03/80/96/360_F_1703809641_q4zmecbcOAe5Q3HGwAfizgCKkGHBmFMT.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ホーム .貴重な話{
+    max-width: 50rem;
+}
+
+.ホーム .貴重な話 h3{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.ホーム .貴重な話 span{
+font-size: 3.5rem;
+color: var(--blue);
+padding: 1rem 0;
+line-height: 1.5;
+
+}
+
+.ホーム .貴重な話 p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+.マンドリストとは .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.マンドリストとは .row h3{
+    font-size: 3rem;
+}
+
+.マンドリストとは .貴重な話 h3{
+    font-size: 2.5rem;
+}
+
+.マンドリストとは .貴重な話 p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 1.5rem;
+    background: #6d9ef9;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    border: 1rem solid rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column; 
+    background: #fff;
+    padding: 2rem;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    width: 100px;
+}
+
+.icons-container .icons .logo{
+    display: flex;
+    align-items: center;
+}
+
+.icons-container h3{
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    font-size: 1.3rem;
+}
+
+.受講者からの声 .レビュー一覧{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.受講者からの声 .レビュー一覧 .レビュー{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.58);
+    position: relative;
+    font-size: 1.7rem;
+}
+
+.受講者からの声 .レビュー一覧 .レビュー .comment_title{
+    color: #97b4fe;
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .5rem .5rem;
+    font-size: 1.6rem;
+    background: rgba(0, 0, 0, 0.33);
+    z-index: 1;
+    border-radius: .5rem;
+
+}
+
+.受講者からの声 .レビュー一覧 .レビュー img{
+    width: 575px;
+    height: 350px;
+}
+
+
+.受講者からの声 .レビュー一覧 .レビュー .貴重な話 h3{
+    font-size: 2rem;
+    padding: .3rem;
+    text-align: center;
+}
+
+.受講者からの声 .レビュー一覧 .レビュー .貴重な話 p{
+    font-size: 1.5rem;
+    padding: .3rem;
+}
+
+.マンドれなからのメッセージ{
+    padding: 50px;
+}
+
+/* 見出し */
+.heading{
+    font-size: 5rem;
+    margin-bottom: 40px;
+}
+
+/* 左右の親 */
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* 左 */
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    font-size: 2rem;
+}
+
+/* 右 */
+.right-side{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 画像 */
+.right-side img{
+    width: 100%;
+    max-width: 450px;
+    padding-right: 90px;
+    padding-top: 65px;
+    box-shadow: rgba(0, 0, 0, 0.81);
+    height: auto;
+    display: block;
+}
+
+.マンドリル募集{
+    display: flex;
+    background: url("https://wallpaper.forfun.com/fetch/46/46729b5e9ff62a8890db1246444993f5.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.マンドリル募集 .heading{
+    color: #000;
+    background: rgba(167, 179, 255, 0.3)
+}
+
+.マンドリル募集 .left-side{
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.マンドリル募集 .left-side .貴重な話{
+    font-size: 1.7rem;
+    color: #6d9ef9;
+    text-shadow: rgba(0, 0, 0, 0.653);
+}
+
+.マンドリル募集 .left-side .貴重な話 a{
+    color: #eee;
+}
+
+
+.採用一覧{
+    width: 80%;
+}
+
+.項目{
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* summary */
+summary{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5rem;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+}
+
+/* 中身は非表示 */
+.項目 p,
+.項目 ul {
+    display: none;
+    font-size: 2rem;
+    padding-left: 25px;
+}
+
+/* 開いたら表示 */
+details[open] p,
+details[open] ul {
+    display: block;
+}
+
+/* リスト */
+.項目 li{
+    font-size: 1.6rem;
+}
+
+/* 矢印 */
+.arrow{
+    transition: 0.3s;
+}
+
+details[open] .arrow{
+    transform: rotate(90deg);
+}
+
+
+/*requirements hutmlのcss*/
+
+.logo{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin:2rem 0;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.logo span{
+    color: var(--blue);
+
+}
+
+body{
+    padding-top: 120px;
+
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.マンドリルに対する考え方{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.マンドリルに対する考え方 h1{
+    padding-top: 10px;
+    font-size: 3.5rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.マンドリルに対する考え方 p{
+    font-size: 2.3rem;
+}
+
+.マンドリルに対する考え方 span{
+    color: #1c55f0;
+}
+
+.マンドリルに対する考え方 .right-side{
+
+    flex: .5;  
+}
+
+.マンドリルに対する考え方 .left-side{
+    flex: 1;
+}
+
+.マンドリルに対する考え方 .right-side img{
+    width: 100%;
+}
+
+
+section{
+    padding: 3rem 9%;
+}
+
+
+
+.requirements {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.requirements h1{
+    background: rgba(51, 102, 255, 0.05);
+    background-size: 4px;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.requirements h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.requirements li{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.requirements ul{
+    padding-left: 5rem
+}
+
+.給与 h1{
+    font-size: 3.5rem;
+    margin-bottom: .5rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.給与 h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding-top: .5px;
+    padding-left: 2rem;
+}
+
+.給与 ul{
+    padding-left: 5rem;
+}
+
+.給与 li{
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.給与 p{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.勤務地 h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.勤務地 p{
+    font-size: 2rem;
+    
+}
+
+.勤務時間 h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.勤務時間 p{
+    font-size: 2rem;
+}
+
+.研修 h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.研修 p{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.基本勤務情報 h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    background: rgba(51, 102, 255, 0.05);
+}
+
+.基本勤務情報 p{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.基本勤務情報 .年間休日日数 ul{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+
+
+.container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.container h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+input, textarea{
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid "ccc";
+    border-radius: 5px;
+}
+
+button{
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.hover{
+    background: var(--blue);
+}
+
+#result{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.お問い合わせ{
+    background: #6d9ef9;
+}
+
+.お問い合わせ h3{
+font-size: 2rem;
+}
+
+.お問い合わせ p{
+    font-size: 1.5rem;
+}
+
+/*monkeylevel.css開始*/
+
+.猿レベル診断{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.質問{
+    margin-bottom: 2.5rem;
+}
+
+.質問 h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.choices label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.choices input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+#check{
+    display: block;
+    margin: 2rem auto;   /* ←中央配置 */
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    background: #3366ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ホバー */
+#check:hover{
+    background: #1f4fe0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* 押した時 */
+#check:active{
+    transform: translateY(0px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+#result{
+    font-size: 5rem;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    background: rgba(51, 102, 255, 0.05);
+    text-align: center;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+    font-size: 55%;
+}
+
+header{
+    padding: 2rem;
+}
+
+section{
+    padding: 2rem;
+}
+
+.ホーム{
+    background-position: left;
+}
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .ホーム .貴重な話 h3{
+        font-size: 5rem;
+    }
+
+    .ホーム .貴重な話 span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+    font-size: 50%;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+
+}
